@@ -2,9 +2,9 @@ $(document).ready(function(){
     'use strict'
 
     var currentQuote = 0;
-    var quoteTime = 12000;
+    var quoteTime = 13000;
     var fadeTime = 2000;
-    var citeDelay = 8000;
+    var citeDelay = 9000;
     var quotes = [
         'Perfection is achieved, not when there is nothing more<br>to add, but when there is nothing left to take away.<cite>Antoine De Saint-Exupery</cite>',
         'Simplicity is the ultimate sophistication.<cite>Leonardo da Vinci</cite>',

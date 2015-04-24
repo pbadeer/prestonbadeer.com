@@ -1,8 +1,14 @@
 @import url('reset.css');
 @import url('panton.css');
 
+@-webkit-keyframes pulse {
+      0% {color: gray;}
+     100% {color: #16b0ff; text-shadow: 0 0 0.5em #16b0ff;}
+}
+
 body {
     font-size: 16px;
+    min-height: 600px;
 }
 blockquote {
     text-align: center;
@@ -18,9 +24,12 @@ cite {
     line-height: 46px;
 }
 .greeting {
-    margin-top: 120px;
-    text-align: center;
-    position: relative;
+    bottom: 1em;
+    position: absolute;
+    left: 50%;
+    width: 485px;
+    margin-left: -242px;
+    color: gray;
 }
 .greeting span {
     font-family: "Panton-Light", sans-serif;
@@ -31,11 +40,11 @@ cite {
     font-family: "PantonIcons-DRegular";
     font-size: 48px;
     content: 'x';
-    color: gray;
 
     position: absolute;
     left: -1.1em;
-    top: 0.58em;
+    top: 0.65em;
+    -webkit-animation: pulse 3s infinite alternate;
 }
 .greeting nav {
     display: inline-block;
@@ -50,7 +59,7 @@ cite {
     color: gray;
     font-family: 'Panton-RegularItalic';
     font-size: 21px;
-    line-height: 35px;
+    line-height: 38px;
 }
 .greeting nav a:nth-child(2) {
     margin-left: 0.75em;
@@ -59,9 +68,11 @@ cite {
     color: #16b0ff;
     padding-left: 0.5em;
     margin-right: -0.5em;
+    text-shadow: 0 0 0.5em rgba(22,176,255,0.5);
 }
 .greeting nav:hover::before {
     color: #16b0ff;
+    text-shadow: 0 0 0.5em #16b0ff;
 }
 .greeting nav a,
 .greeting nav::before {
