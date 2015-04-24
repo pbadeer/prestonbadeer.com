@@ -1,0 +1,71 @@
+@import url('reset.css');
+@import url('panton.css');
+
+body {
+    font-size: 16px;
+}
+blockquote {
+    text-align: center;
+    font-family: "Adobe Garamond Pro", serif;
+    font-size: 36px;
+    padding-top: 200px;
+    line-height: 46px;
+    min-height: 4em;
+}
+cite {
+    display: block;
+    font-size: 24px;
+    line-height: 46px;
+}
+.greeting {
+    margin-top: 120px;
+    text-align: center;
+    position: relative;
+}
+.greeting span {
+    font-family: "Panton-Light", sans-serif;
+    font-size: 32px;
+    position: relative;
+}
+.greeting nav::before {
+    font-family: "PantonIcons-DRegular";
+    font-size: 48px;
+    content: 'x';
+    color: gray;
+
+    position: absolute;
+    left: -1.1em;
+    top: 0.58em;
+}
+.greeting nav {
+    display: inline-block;
+    position: relative;
+    left: 3em;
+    top: 0.75em;
+}
+.greeting nav a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: gray;
+    font-family: 'Panton-RegularItalic';
+    font-size: 21px;
+    line-height: 35px;
+}
+.greeting nav a:nth-child(2) {
+    margin-left: 0.75em;
+}
+.greeting nav a:hover {
+    color: #16b0ff;
+    padding-left: 0.5em;
+    margin-right: -0.5em;
+}
+.greeting nav:hover::before {
+    color: #16b0ff;
+}
+.greeting nav a,
+.greeting nav::before {
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+}
